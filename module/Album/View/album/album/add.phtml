@@ -3,6 +3,11 @@ $title = 'Add new album';
 $this->headTitle($title);
 ?>
 <h1><?= $this->escapeHtml($title) ?></h1>
+
+<button class="btn btn-secondary">
+  <a href="<?= $this->url('album') ?>" style="color: white; text-decoration:none">Cancel</a>
+</button>
+
 <?php
 // This provides a default CSS class and placeholder text for the title element:
 $album = $form->get('title');
